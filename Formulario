@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reclamação</title>
+</head>
+<body>
+    <h1>Formulário de Reclamação</h1>
+    <form id="reclamacaoForm" action="https://script.google.com/macros/s/AKfycbw6J06K2qL9GBN2F0otyrZgOPNE1J-Si5qaS8o9su2LlP7veb-HPiKFHBrhH5FU0E0wkg/exec" method="post" enctype="multipart/form-data">
+        <label for="nomeCliente">Nome do Cliente:</label>
+        <input type="text" id="nomeCliente" name="nomeCliente" required><br><br>
+        
+        <label for="numeroPedido">Número do Pedido:</label>
+        <input type="text" id="numeroPedido" name="numeroPedido" required><br><br>
+        
+        <label for="numeroBloco">Número do Bloco:</label>
+        <input type="text" id="numeroBloco" name="numeroBloco" required><br><br>
+        
+        <label for="numeroChapas">Número das Chapas Reclamadas:</label>
+        <input type="text" id="numeroChapas" name="numeroChapas" required><br><br>
+        
+        <label for="defeitoReclamacao">Defeito da Reclamação:</label>
+        <textarea id="defeitoReclamacao" name="defeitoReclamacao" required></textarea><br><br>
+        
+        <label for="anexos">Inserir Anexos (até 5 arquivos):</label>
+        <input type="file" id="anexos" name="anexos" multiple accept="image/*,.pdf" required><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
